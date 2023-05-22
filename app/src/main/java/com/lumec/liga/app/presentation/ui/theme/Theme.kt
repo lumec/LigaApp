@@ -1,4 +1,4 @@
-package com.lumec.liga.app.ui.theme
+package com.lumec.liga.app.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
