@@ -2,6 +2,9 @@ package com.lumec.liga.app.data.remote
 
 import com.google.gson.annotations.SerializedName
 
+data class TeamsResponse(
+    val teams: List<TeamResponse>?
+)
 data class TeamResponse(
     @SerializedName("strTeam")
     val name: String?,
