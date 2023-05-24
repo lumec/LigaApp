@@ -27,7 +27,7 @@ class HomeViewModel @Inject constructor(
             getTeamsUseCase().collect{ result ->
                 when(result) {
                     is Resource.Error -> {
-                        _state.value = HomeState(error = result.message ?: "Message")
+                        _state.value = HomeState(error = result.message ?: "Error")
                     }
                     is Resource.Loading -> {
                         _state.value = HomeState(isLoading = true)

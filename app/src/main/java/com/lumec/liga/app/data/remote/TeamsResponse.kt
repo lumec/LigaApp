@@ -11,7 +11,7 @@ data class TeamResponse(
     @SerializedName("strDescriptionEN")
     val description: String?,
     @SerializedName("intFormedYear")
-    val year: Int?,
+    val year: String?,
     @SerializedName("strStadium")
     val stadium: String?,
     @SerializedName("strTeamBadge")

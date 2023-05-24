@@ -7,7 +7,7 @@ fun TeamResponse.toDomainModel(): Team {
     return Team(
         name = name ?: "",
         description = description ?: "",
-        year = year ?: 0,
+        year = year ?: "",
         stadium = stadium ?: "",
         badge = badge ?: "",
         jersey = jersey ?: "",
