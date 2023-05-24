@@ -1,4 +1,4 @@
-package com.lumec.liga.app.presentation.home.components
+package com.lumec.liga.app.presentation.home
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf

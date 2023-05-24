@@ -1,4 +1,4 @@
-package com.lumec.liga.app.presentation.home.components
+package com.lumec.liga.app.presentation.home
 
 import com.lumec.liga.app.domain.model.Team
 

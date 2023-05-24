@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.lumec.liga.app.presentation.home.components.HomeScreen
+import com.lumec.liga.app.presentation.home.HomeScreen
 import com.lumec.liga.app.presentation.ui.theme.LigaAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 

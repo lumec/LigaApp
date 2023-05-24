@@ -1,4 +1,4 @@
-package com.lumec.liga.app.presentation.home.components
+package com.lumec.liga.app.presentation.home
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,6 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.lumec.liga.app.presentation.home.components.TeamCard
 
 @Composable
 fun HomeScreen(
@@ -19,7 +20,7 @@ fun HomeScreen(
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(modifier = Modifier.fillMaxSize()) {
             items(state.teams) { team ->
-                Text(team.name)
+                TeamCard(team = team)
             }
         }
         if (state.isLoading) {
