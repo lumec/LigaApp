@@ -6,13 +6,19 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.lumec.liga.app.presentation.details.DetailsScreen
 import com.lumec.liga.app.presentation.home.HomeScreen
+import com.lumec.liga.app.presentation.splash.SplashScreen
 
 @Composable
 fun Navigation(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Home.route
+        startDestination = Screen.Splash.route
     ) {
+        composable(
+            route = Screen.Splash.route
+        ) {
+            SplashScreen(navController)
+        }
         composable(
             route = Screen.Home.route
         ) {
