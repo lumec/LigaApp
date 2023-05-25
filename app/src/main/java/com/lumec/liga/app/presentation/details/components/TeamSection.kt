@@ -1,7 +1,6 @@
 package com.lumec.liga.app.presentation.details.components
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -33,11 +32,9 @@ import com.lumec.liga.app.presentation.common.Picture
 @Composable
 fun TeamSection(
     team: Team,
-    onItemClick: (Team) -> Unit,
 ) {
     Card(
         modifier = Modifier
-            .clickable { onItemClick(team) }
             .padding(vertical = 8.dp)
             .fillMaxWidth(),
         shape = RoundedCornerShape(corner = CornerSize(8.dp)),

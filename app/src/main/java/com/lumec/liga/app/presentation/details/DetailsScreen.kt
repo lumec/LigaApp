@@ -1,6 +1,5 @@
 package com.lumec.liga.app.presentation.details
 
-import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -27,17 +26,10 @@ import com.lumec.liga.app.presentation.details.components.TeamSection
 
 @Composable
 fun DetailsScreen(navController: NavController) {
-
-
     val team = navController.previousBackStackEntry?.savedStateHandle?.get<Team>("team")
-    Log.e("Detalles", "${team?.year}")
     team?.let {
         ScreenContainer(navController, team)
-
-
     }
-
-
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -81,10 +73,7 @@ fun Content(team: Team): @Composable (PaddingValues) -> Unit = { innerPadding ->
             .fillMaxSize()
             .verticalScroll(rememberScrollState()),
     ) {
-        TeamSection(
-            team = team,
-            onItemClick = { Log.e("Detials", "Hola") }
-        )
+        TeamSection(team = team)
         JersySection(imagePath = team.jersey)
         Text(
             text = team.description,
