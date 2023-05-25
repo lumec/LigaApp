@@ -13,7 +13,7 @@ Durante el desarrollo de este proyecto, se ha puesto especial énfasis en la apl
 
 | Splash | Home | Details
 |--|--|--|
-| <img src="images/splash.png" width="200px"> | <img src="images/home.png" width="200px"> | <img src="images/details.png" width="200px"> | 
+| <img src="images/splash.jpg" width="200px"> | <img src="images/home.jpg" width="200px"> | <img src="images/details.jpg" width="200px"> | 
 
 
 ------------
